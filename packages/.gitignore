@@ -1,0 +1,11 @@
+# Ignore everything by default
+*
+
+# Unignore .gitignore and README
+!.gitignore
+README.md
+
+# package-sync
+!package-sync/
+!package-sync/**
+
