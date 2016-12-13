@@ -1,9 +1,15 @@
 "*":
   core:
+    customFileTypes:
+      "source.ini": [
+        "flake8rc"
+        "pylintrc"
+      ]
     disabledPackages: [
       "linter-mypy"
       "language-python"
       "language-gfm"
+      "whitespace"
     ]
     projectHome: "/Users/waksman/git"
     telemetryConsent: "limited"
