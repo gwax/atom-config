@@ -1,3 +1,41 @@
 "*":
+  core:
+    disabledPackages: [
+      "linter-mypy"
+      "language-python"
+      "language-gfm"
+    ]
+    projectHome: "/Users/waksman/git"
+    telemetryConsent: "limited"
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    fontFamily: "Fira Code"
+    invisibles: {}
+    lineHeight: 1.2
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
   "exception-reporting":
-    userId: "4ac9b557-edcd-330b-efbb-e36e162a5b06"
+    userId: "98d14cbf-d2f5-787a-7c5a-eb08daa3c261"
+  "linter-mypy": {}
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  "seti-ui":
+    compactView: true
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
