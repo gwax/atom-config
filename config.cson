@@ -1,4 +1,6 @@
 "*":
+  "autocomplete-python":
+    useKite: false
   core:
     customFileTypes:
       "source.ini": [
@@ -10,6 +12,8 @@
       "language-python"
       "language-gfm"
       "whitespace"
+      "wrap-guide"
+      "linter-pydocstyle"
     ]
     projectHome: "/Users/waksman/git"
     telemetryConsent: "limited"
@@ -19,14 +23,19 @@
     ]
   editor:
     fontFamily: "Fira Code"
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.2
     scrollPastEnd: true
-    showIndentGuide: true
     showInvisibles: true
   "exception-reporting":
     userId: "98d14cbf-d2f5-787a-7c5a-eb08daa3c261"
+  "linter-flake8":
+    projectConfigFile: [
+      ".flake8rc"
+    ]
   "linter-mypy": {}
+  "linter-pylint": {}
   minimap:
     plugins:
       "find-and-replace": true
@@ -35,6 +44,13 @@
       linterDecorationsZIndex: 0
       "minimap-autohide": true
       "minimap-autohideDecorationsZIndex": 0
+  "omni-ruler":
+    columns: [
+      "72"
+      "80"
+      "100"
+      "120"
+    ]
   "package-sync":
     createOnChange: true
     forceOverwrite: true
