@@ -1,6 +1,17 @@
 "*":
+  "atom-beautify":
+    general:
+      analytics: false
+    haskell: {}
+    puppet: {}
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+    strictMatching: true
   "autocomplete-python":
     useKite: false
+  "copy-as-rtf":
+    fontface: "Fira Code"
+    fontsize: 12
   core:
     customFileTypes:
       "source.ini": [
@@ -8,48 +19,58 @@
         "pylintrc"
       ]
     disabledPackages: [
-      "linter-mypy"
-      "language-python"
+      "exception-reporting"
       "language-gfm"
+      "language-python"
+      "linter-markdown"
+      "linter-mypy"
+      "linter-pydocstyle"
       "whitespace"
       "wrap-guide"
-      "linter-pydocstyle"
     ]
     projectHome: "/Users/waksman/git"
     telemetryConsent: "limited"
     themes: [
-      "seti-ui"
-      "seti-syntax"
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Fira Code"
-    fontSize: 12
+    fontSize: 10
     invisibles: {}
     lineHeight: 1.2
+    preferredLineLength: 100
     scrollPastEnd: true
     showInvisibles: true
-  "exception-reporting":
-    userId: "98d14cbf-d2f5-787a-7c5a-eb08daa3c261"
+    tabLength: 4
+  fonts:
+    fontFamily: "FiraCode"
   "linter-flake8":
     projectConfigFile: [
       ".flake8rc"
     ]
   "linter-mypy": {}
+  "linter-puppet-lint":
+    oldVersion: false
   "linter-pylint": {}
   minimap:
     plugins:
       "find-and-replace": true
       "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
-      "minimap-autohide": true
-      "minimap-autohideDecorationsZIndex": 0
-  "omni-ruler":
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "multi-wrap-guide":
     columns: [
-      "72"
-      "80"
-      "100"
-      "120"
+      79
+      100
+      120
+      160
+      200
+      300
+      400
     ]
   "package-sync":
     createOnChange: true
