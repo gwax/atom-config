@@ -18,6 +18,9 @@
         "flake8rc"
         "pylintrc"
       ]
+      "text.html.mako": [
+        "tmpl"
+      ]
     disabledPackages: [
       "exception-reporting"
       "language-gfm"
@@ -25,6 +28,7 @@
       "linter-markdown"
       "linter-mypy"
       "linter-pydocstyle"
+      "spell-check"
       "whitespace"
       "wrap-guide"
     ]
@@ -35,15 +39,17 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontSize: 10
+    fontSize: 9
     invisibles: {}
     lineHeight: 1.2
     preferredLineLength: 100
     scrollPastEnd: true
+    showIndentGuide: true
     showInvisibles: true
     tabLength: 4
   fonts:
     fontFamily: "FiraCode"
+  "ide-haskell": {}
   "linter-flake8":
     projectConfigFile: [
       ".flake8rc"
@@ -52,6 +58,12 @@
   "linter-puppet-lint":
     oldVersion: false
   "linter-pylint": {}
+  "linter-spell":
+    spellPath: "aspell"
+  "linter-ui-default":
+    decorateOnTreeView: "Files and Directories"
+    showPanel: true
+    showProviderName: true
   minimap:
     plugins:
       "find-and-replace": true
@@ -72,11 +84,14 @@
       300
       400
     ]
+  "one-dark-ui":
+    fontSize: 9
+    layoutMode: "Compact"
   "package-sync":
     createOnChange: true
     forceOverwrite: true
-  "seti-ui":
-    compactView: true
+  pigments:
+    notifyReloads: false
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
