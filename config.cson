@@ -2,7 +2,8 @@
   "atom-beautify":
     general:
       analytics: false
-    haskell: {}
+    haskell:
+      beautify_on_save: true
     puppet: {}
   "autocomplete-plus":
     confirmCompletion: "tab"
@@ -25,9 +26,6 @@
       "exception-reporting"
       "language-gfm"
       "language-python"
-      "linter-markdown"
-      "linter-mypy"
-      "linter-pydocstyle"
       "spell-check"
       "whitespace"
       "wrap-guide"
@@ -39,7 +37,7 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontSize: 9
+    fontSize: 10
     invisibles: {}
     lineHeight: 1.2
     preferredLineLength: 100
@@ -79,10 +77,6 @@
       79
       100
       120
-      160
-      200
-      300
-      400
     ]
   "one-dark-ui":
     fontSize: 9
@@ -90,8 +84,10 @@
   "package-sync":
     createOnChange: true
     forceOverwrite: true
+  "pdf-view": {}
   pigments:
     notifyReloads: false
+  tasks: {}
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
