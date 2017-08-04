@@ -24,6 +24,7 @@
 atom-text-editor {
   // color: white;
   // background-color: hsl(180, 24%, 12%);
+  letter-spacing: 0.13px;
 }
 
 // style UI elements inside atom-text-editor
@@ -34,8 +35,11 @@ atom-text-editor .cursor {
 atom-text-editor.editor .syntax--comment,
 atom-text-editor.editor .syntax--string.syntax--quoted,
 atom-text-editor.editor .syntax--string.syntax--regexp {
+  font-family: "Verily Serif Mono";
+  letter-spacing: 0.1px;
   -webkit-font-feature-settings: "liga" off, "calt" off;
-}
+}         // line these up: |
+// using letter-spacing:    |
 
 // Tree view git status labels
 .tree-view-git-status.git-branch-production .branch-label {
@@ -51,4 +55,20 @@ atom-text-editor.editor .syntax--string.syntax--regexp {
 // Multi-wrap guide lines
 atom-text-editor.editor .multi-wrap-guide .multi-wrap-guide-line {
     opacity: 0.3;
+}
+
+// Extra file icon configurations
+.tab-bar .tab .title.icon:before {
+  margin-right: 0.3em;
+}
+
+.icon[data-name$=".todo"]:before {
+  font-family: "Octicons Regular";
+  content: "\f076";
+}
+
+.icon[data-name*="requirements"][data-name$=".in"]:before,
+.icon[data-name*="requirements"][data-name$=".txt"]:before {
+  font-family: "Octicons Regular";
+  content: "\f035";
 }

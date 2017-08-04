@@ -5,6 +5,9 @@
     haskell:
       beautify_on_save: true
     puppet: {}
+  "atom-clock":
+    dateFormat: "YYYY-MM-DDTHH:mm:ssZ"
+    showUTC: true
   "autocomplete-plus":
     confirmCompletion: "tab"
     strictMatching: true
@@ -29,15 +32,16 @@
       "spell-check"
       "whitespace"
       "wrap-guide"
+      "git-plus"
     ]
     projectHome: "/Users/waksman/git"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "pristine-ui"
+      "pure-syntax"
     ]
   editor:
-    fontSize: 10
+    fontSize: 9
     invisibles: {}
     lineHeight: 1.2
     preferredLineLength: 100
@@ -48,6 +52,10 @@
   fonts:
     fontFamily: "FiraCode"
   "ide-haskell": {}
+  linter:
+    disabledProviders: [
+      "linter-mypy"
+    ]
   "linter-flake8":
     projectConfigFile: [
       ".flake8rc"
@@ -55,14 +63,17 @@
   "linter-mypy": {}
   "linter-puppet-lint":
     oldVersion: false
-  "linter-pylint": {}
+  "linter-pylint":
+    disableTimeout: true
+    messageFormat: "%s %m"
   "linter-spell":
     spellPath: "aspell"
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
-    showPanel: true
+    panelHeight: 135
     showProviderName: true
   minimap:
+    disablePythonDocLinks: true
     plugins:
       "find-and-replace": true
       "find-and-replaceDecorationsZIndex": 0
@@ -80,16 +91,18 @@
     ]
   "one-dark-ui":
     fontSize: 9
-    layoutMode: "Compact"
   "package-sync":
     createOnChange: true
     forceOverwrite: true
   "pdf-view": {}
   pigments:
     notifyReloads: false
+  "pristine-ui":
+    fontSize: 8
   tasks: {}
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
