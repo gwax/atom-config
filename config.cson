@@ -8,6 +8,8 @@
   "atom-clock":
     dateFormat: "YYYY-MM-DDTHH:mm:ssZ"
     showUTC: true
+  "autocomplete-paths":
+    maxFileCount: 10000
   "autocomplete-plus":
     confirmCompletion: "tab"
     strictMatching: true
@@ -38,7 +40,7 @@
     telemetryConsent: "limited"
     themes: [
       "pristine-ui"
-      "pure-syntax"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
     fontSize: 9
@@ -51,9 +53,12 @@
     tabLength: 4
   fonts:
     fontFamily: "FiraCode"
+  "git-blame":
+    columnWidth: 366
   "ide-haskell": {}
   linter:
     disabledProviders: [
+      "JSHint"
       "linter-mypy"
     ]
   "linter-flake8":
@@ -70,7 +75,7 @@
     spellPath: "aspell"
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
-    panelHeight: 135
+    showPanel: true
     showProviderName: true
   minimap:
     disablePythonDocLinks: true
