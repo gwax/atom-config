@@ -45,7 +45,6 @@ packages: [
   "linter-jshint"
   "linter-jsonlint"
   "linter-markdown"
-  "linter-mypy"
   "linter-puppet-lint"
   "linter-pydocstyle"
   "linter-pylint"

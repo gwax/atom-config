@@ -35,6 +35,17 @@
       "whitespace"
       "wrap-guide"
       "git-plus"
+      "atom-beautify"
+      "autocomplete-haskell"
+      "build-cargo"
+      "haskell-ghc-mod"
+      "ide-haskell"
+      "ide-haskell-cabal"
+      "ide-haskell-hasktags"
+      "linter-pydocstyle"
+      "minimap-linter"
+      "racer"
+      "tree-view-git-status"
     ]
     projectHome: "/Users/waksman/git"
     telemetryConsent: "limited"
@@ -58,14 +69,15 @@
   "ide-haskell": {}
   linter:
     disabledProviders: [
-      "JSHint"
       "linter-mypy"
+      "JSHint"
     ]
   "linter-flake8":
     projectConfigFile: [
       ".flake8rc"
     ]
-  "linter-mypy": {}
+  "linter-mypy":
+    mypyPath: "$PROJECT_PATH/stubs"
   "linter-puppet-lint":
     oldVersion: false
   "linter-pylint":
@@ -75,7 +87,6 @@
     spellPath: "aspell"
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
-    showPanel: true
     showProviderName: true
   minimap:
     disablePythonDocLinks: true
@@ -111,3 +122,30 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
+".basic.html.text":
+  editor:
+    preferredLineLength: 120
+  "multi-wrap-guide":
+    columns: [
+      79
+      100
+      120
+    ]
+".pgsql.source":
+  editor:
+    preferredLineLength: 120
+  "multi-wrap-guide":
+    columns: [
+      79
+      100
+      120
+    ]
+".plain.text":
+  editor:
+    preferredLineLength: 120
+  "multi-wrap-guide":
+    columns: [
+      79
+      100
+      120
+    ]
